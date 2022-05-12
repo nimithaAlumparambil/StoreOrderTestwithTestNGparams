@@ -31,13 +31,13 @@ public class BasePageObject {
     // Click on element with given locator when its visible
     protected void click(By locator) {
         //wait for visibility of the element for 5 seconds
-        waitForVisibilityOf(locator, 10);
+        waitForVisibilityOf(locator, 20);
         find(locator).click();
     }
     //To get text of the web element
     protected String getTextOfElement(By locator){
         //wait for visibility
-        waitForVisibilityOf(locator,5);
+        waitForVisibilityOf(locator,10);
         String elementText = find(locator).getText();
         return elementText;
     }
