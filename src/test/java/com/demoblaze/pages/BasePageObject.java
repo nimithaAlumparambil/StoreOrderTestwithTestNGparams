@@ -31,7 +31,7 @@ public class BasePageObject {
     // Click on element with given locator when its visible
     protected void click(By locator) {
         //wait for visibility of the element for 5 seconds
-        waitForVisibilityOf(locator, 5);
+        waitForVisibilityOf(locator, 10);
         find(locator).click();
     }
     //To get text of the web element
